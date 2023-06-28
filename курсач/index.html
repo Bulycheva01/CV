@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE BANK</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!--  #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <img src="assets/images/thebank.jpg"     alt="THE BANK">
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">THE BANK</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link" data-nav-toggler>Event</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="index1.html" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #WELCOME
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Better Future With Us</p>
+
+            <h2 class="h1 hero-title">THE BANK</h2>
+
+            <p class="hero-text">
+              We are glad to welcome you on the website of our bank.
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Join Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <img src="assets/images/ava.jpg" height="520" width="600"  alt="THE BANK" >
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SLIDER
+      -->
+
+      <section class="banner">
+        <div class="imgBox">
+            <img src="assets/images/img1.jpg" alt="img" class="active">
+            <img src="assets/images/img2.jpg" alt="img">
+            <img src="assets/images/img3.jpg" alt="img">
+            <img src="assets/images/img4.jpg" alt="img">
+        </div>
+
+        <div class="contentBox">
+            <div class="active">
+                <h2>Slide One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Laboriosam esse doloremque laborum. Molestias 
+                    ducimus iste saepe vel facilis rem exercitationem.
+                </p>
+                <a href="#">READ MORE</a>           
+            </div>
+
+            <div>
+                <h2>Slide Two</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Laboriosam esse doloremque laborum. Molestias 
+                    ducimus iste saepe vel facilis rem exercitationem.
+                </p>
+                <a href="#">READ MORE</a>           
+            </div>
+
+            <div>
+                <h2>Slide Three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Laboriosam esse doloremque laborum. Molestias 
+                    ducimus iste saepe vel facilis rem exercitationem.
+                </p>
+                <a href="#">READ MORE</a>           
+            </div>
+
+            <div>
+                <h2>Slide Four</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Laboriosam esse doloremque laborum. Molestias 
+                    ducimus iste saepe vel facilis rem exercitationem.
+                </p>
+                <a href="#">READ MORE</a>           
+            </div>
+        </div>
+
+        <ul class="controls">
+            <li onclick = 'prevSlide(); prevSlideText();'></li>
+            <li onclick = 'nextSlide(); nextSlideText();'></li>
+        </ul>
+    </section>
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Cards Categories</p>
+
+          <h2 class="h2 section-title">Popular Topics</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Personal</a>
+                  </h3>
+
+                  <span class="card-meta">3 items</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">VIP-cards</a>
+                  </h3>
+
+                  <span class="card-meta">4 items</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Business</a>
+                  </h3>
+
+                  <span class="card-meta">39 items</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Currency</a>
+                  </h3>
+
+                  <span class="card-meta">2 items</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="headset-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Baby-card</a>
+                  </h3>
+
+                  <span class="card-meta">1 item</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Temporary cards</a>
+                  </h3>
+
+                  <span class="card-meta">4 items</span>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT US
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/6685.jpg" width="550" height="590" loading="lazy" alt="about banner"
+              class="w-100 about-img">
+
+            <img src="./assets/images/8669071.jpg" width="550" height="590" loading="lazy" aria-hidden="true"
+            class="remove"
+              >
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Who We Are</p>
+
+            <h2 class="h2 section-title">We Offer The Best Quality</h2>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Lorem Ipsum Dolor</h3>
+
+                  <p class="item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
+                    aliqua.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-2">
+                  <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Lorem Ipsum Dolor</h3>
+
+                  <p class="item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
+                    aliqua.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/about-icon-3.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Lorem Ipsum Dolor</h3>
+
+                  <p class="item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
+                    aliqua.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">About Us</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="converter">
+        <div class="form">
+            <h2>Currency Converter</h2>
+            <input type="text" id="text">
+            <select  id="sel">
+                <option value="0">eur</option>
+                <option value="1">usd</option>
+                <option value="2">rub</option>
+                <option value="3">uah</option>
+                <option value="4">pln</option>
+                <option value="5">chf</option>
+                <option value="6">jpy</option>
+            </select>
+            <input type="button" value="ok" id="btn">
+            <div id="block"></div>
+        </div>
+    </div>
+    <section class="card">                   
+        <div class="card_text">
+            <h2>НАШИ КАРТЫ</h2>
+            <div class="card_button">
+                <button>Детские</button>
+                <button>Валютные</button>
+                <button>VIP-карты</button>
+            </div>
+        </div>
+        <div class="card_picture1">
+            <div class="card_item">
+                <img src="assets/images/с1.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="card_item">
+                <img src="assets/images/с2.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="card_item">
+                <img src="assets/images/с3.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+        </div>
+
+        <div class="card_picture2">
+            <div class="card_item">
+                <img src="assets/images/с2.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="card_item">
+                <img src="assets/images/с5.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+            <div class="card_item">
+                <img src="assets/images/с6.jpg" height="300" width="330" alt="picture">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum has been the industry</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- 
+        - #Support 
+      -->
+
+      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./assets/images/support.jpg" width="580" height="380" loading="lazy" alt="cta banner"
+              class="img-cover">
+          </figure>
+
+          <div class="cta-content">
+
+            <p class="section-subtitle">Internet-Support</p>
+
+            <h2 class="h2 section-title">Join Our Free Internet-Support</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, consect adipi scing elit, sed do
+              eiusmod tempor
+              incididunt ut sed do eiusmod tempor incididunt ut labore et dolore aliqua.
+            </p>
+
+            <a href="#" class="btn btn-secondary">
+              <span class="span">Have a question?</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Subscribe Newsletter</p>
+
+          <h2 class="h2 section-title">Get Every Latest News</h2>
+
+          <form action="" class="newsletter-form">
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required
+                class="email-field">
+
+              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">THE BANK</a>
+
+          <p class="section-text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its
+            layout. The point of using Lorem Ipsum.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Information</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Our News</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Cards</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              IT-colledge
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">+ 1 (458) 982-5979</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">+ 1 (029) 234-5321</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:contact@eduhome.com" class="footer-link">contact@bulycheva.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2023. All Rights Reserved by <a href="#" class="copyright-link">BULYCHEVA VIKTORIA</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
