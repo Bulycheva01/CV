@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comic+Neue&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    width: 100vw; /*100% view width*/
+    height: 100vh ;
+    background-image: url('header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header__nav{
+    width: 100%;
+    height: 15%;
+}
+
+.heager__nav__top_line{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.header__nav__contacts{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 22%;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #3d2514;
+    font-size: 18px;
+}
+
+.header__nav__contacts a{
+    text-decoration: none;
+    color: #3d2514;
+}
+
+.header__nav__bottom_line{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__nav__top_menu{
+    width: 30%;
+    height: 100%;
+}
+
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav__menu a{
+    text-decoration: none;
+    color: #3d2514;
+    padding-bottom: 6px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.nav__menu a:hover{
+    color: grey;
+    border-bottom: 2px solid #3d2514;
+    padding-bottom: 6px;
+}
+
+.header__text_content{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__text_container{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__text{
+    font-family: 'Comic Neue', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: 2px dashed #3d2514;
+    padding: 14px 17px;
+    margin-bottom: 15px;
+}
+
+.header__title{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 110px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 2px  white;
+    color:#3d2514 ;
+    font-size: 500;
+    margin-top: -10px;
+
+
+
+}
+
+.header__subtitle{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 2px  white; 
+    color:#3d2514 ;
+    font-size: 900;
+    margin-top: -15px;
+}
+
+.header__hero_container{
+    width: 640px;
+    height: 540px;
+    position: relative;
+}
+
+.header__hero_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__offer{
+    width: 175px;
+    height: 175px;
+    background-image: url('header_offer.png');
+    background-size:cover ;
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    text-align: center;
+}
+
+.header__offer_top_line{
+    margin: 0 auto;
+    width: 100px;
+    font-size: 70px;
+    padding-top: 40px;
+    margin-left: 30px;
+    margin-top: -12px;
+}
+
+.header__offer_top_line span{
+    font-size: 30px;
+}
+
+.header__offer_bottom_line{
+    margin: 0 auto;
+    width: 100px;
+    font-size: 33px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-left: 40px;
+}
+
+main{
+    width: 100vw;
+}
+
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 252, 232);
+}
+
+.menu__text_container{
+    width: 100%;
+    height: 25%;
+    padding: 15px;
+}
+
+.menu__title{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.menu__text{
+    line-height: 30px;
+    width: 805;
+    margin: 0 auto ;
+    text-align: center;
+}
+
+.menu__hero_container{
+width: 100%;
+padding: 15px;
+height: 75%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.menu__card{
+    width: 30%;
+    height: 90%;
+
+    box-shadow: 0 0 8px rgb(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 15px;
+    animation: card 3s ease-in-out infinite;
+}
+@keyframes card {
+    0%{
+        transform: scale(0.8) ;
+    }
+
+    50%{
+        transform: scale(1) ;
+    }
+
+    100%{
+        transform: scale(0.8) ;
+    }
+
+}
+
+.menu__block_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__block_text{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu__block_text h2{
+    font-family: 'Comic Neue', cursive;
+    font-size: 38px;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu__block_text p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.menu__block_text a{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #bf2222;
+    color: #fff;
+    padding: 15px 35px;
+    transition: 0.3s;
+}
+
+.menu__block_text a:hover{
+ transform: scale(1.4);
+}
+
+.book{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.sub1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sub2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottle{
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+
+.book img{
+    z-index: -1;
+}
+
+.book__container{
+    width: 70%;
+    height: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.book .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book__text_container{
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+}
+
+.book__form_container{
+    width: 100%;
+    height: 65%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book__title{
+    font-family: 'Comic Neue', cursive;
+    text-transform: uppercase ;
+    text-align: center;
+    color:#3d2514 ;
+    font-size: 30px ;
+    margin-top: 35px;
+}
+
+.book__subtitle{
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    color:#3d2514 ;
+    font-size: 50px ;
+}
+
+.book__block{
+    flex-basis: 47% ;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.book__block input[type='text']{
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    color: #3d3d3d;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px ;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.book__block input[type='button']{
+    width: 90%;
+    border: none;
+    padding: 20px 5px;
+    color: #fff;
+    background-color: #bf2222;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px ;
+    text-align: center;
+    transition: .3s;
+
+}
+
+.book__block input[type='button']:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.book__block input[type='button']:active{
+    transform: scale(0.9);
+}
+
+.footer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(footer_bg.webp);
+    background-size: cover;
+}
+
+.footer .wrapper{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__top_line{
+    width: 100%;
+    height: 80%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.footer__bottom_line{
+    width: 100%;
+    height: 15%;
+    padding: 15px;
+}
+
+.footer__block_left{
+    flex-basis: 47%;
+    height: 100%;
+    padding: 15px;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer__block_right{
+    flex-basis: 47%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer__location{
+width: 50%;
+}
+
+
+.footer__mail{
+    width: 50%;
+    }
+
+.footer__block_left p{
+    margin-top: 40px;
+}
