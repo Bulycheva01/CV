@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*левая граница+левый внутренний отступ
+    +контент+правый внутренний отступ+правая граница*/
+}
+
+body {
+    width: 100vw; /*100% view width*/
+    height: 100vh; /*100% view height*/
+    overflow: hidden; /*обрезать если выходит за границы*/
+    display: flex;
+    align-items: center; /*Y*/
+    justify-content: center; /*X*/
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    background-image: url('./img/pipes-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pipes {
+    width: 50%;
+}
+
+.hat {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    width: 15%;
+}
+
+.hat.active {
+    animation: hat 2s ease-in-out infinite;
+}
+
+@keyframes hat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.title {
+    position: absolute;
+    top: 26.5%;
+    left: 36.5%;
+    width: 35%;
+}
+
+.tie {
+    position: absolute;
+    top: 44.5%;
+    left: 33.5%;
+    width: 3%;
+}
+
+.tie.active {
+    animation: tie 3s ease-in-out infinite;
+    transform-origin: top;
+}
+
+@keyframes tie {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.wheel {
+    position: absolute;
+    top: 43.5%;
+    left: 53.7%;
+    width: 5%;
+}
+
+.wheel.active {
+    animation: wheel 3s ease-in-out infinite;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(-35deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+    100% {
+        transform: rotate(-35deg);
+    }
+}
+
+.hammer {
+    position: absolute;
+    top: 59.5%;
+    left: 34%;
+    width: 12%;
+}
+
+.hammer.active {
+    animation: hammer 1s ease-in-out infinite;
+    transform-origin: right;
+}
+
+@keyframes hammer {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.fish {
+    position: absolute;
+    top: 55.5%;
+    left: 55%;
+    width: 12%;
+}
+
+.fish.active {
+    animation: fish 2s ease-in-out infinite;
+}
+
+@keyframes fish {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mustache {
+    position: absolute;
+    top: 67.5%;
+    left: 39.5%;
+    width: 20%;
+}
+
+.mustache.active {
+    animation: mustache 2s ease-in-out infinite;
+}
+
+@keyframes mustache {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+.btn {
+    position: absolute;
+    top: 6.7%;
+    right: 27%;
+    background-color: #CEE0EB;
+    border-radius: 3%;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #11446e;
+    width: 15%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    animation: btn 3s ease-in-out infinite;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+        letter-spacing: 0.2vw;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+        box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3);
+        letter-spacing: 0.3vw;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.5;
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+        letter-spacing: 0.2vw;
+    }
+}
+
+.block {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    bottom: 4%;
+    background-color: #CEE0EB;
+    border-radius: 1vw;
+    font-family: 'Silkscreen', cursive;
+    font-size: 1vw;
+    text-align: center;
+    color: #11446e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joke {
+    padding: 20px;
+}
+
+.joke.active {
+    animation: joke 2s ease-in-out;
+}
+
+@keyframes joke{
+    from {
+        transform: translateY(-50%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

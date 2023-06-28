@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #09030f;
+    color: #fefefe;
+    font-family: 'Righteous', cursive;
+    font-size: 1vw;
+}
+
+.header {
+    height: 30%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__cartoons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.header__cartoon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__cartoon img{
+    width: 4vw;
+    height: 4vw;
+    transition: 0.3s;
+}
+
+.header__cartoon img:hover{
+    cursor: pointer;
+    animation: pict 3s ease-in-out infinite;
+}
+
+@keyframes pict {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+.header__title{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.header__cartoon-name {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 0.1vw;
+}
+
+.header__cartoon-name:hover {
+    cursor: pointer;
+    color: red;
+    border-bottom: 0.1vw solid red;
+}
+
+.header__cartoon.active .header__cartoon-name{
+    color: red;
+    border-bottom: 0.1vw solid red;
+} 
+
+
+main {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main__buttom{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    border: none;
+    cursor: pointer;
+    background-image: url(img/play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.main__buttom.active{
+    background-image: url(img/pause.svg);
+}
+
+.main__buttom:hover{
+    cursor: pointer;
+    transform: scale(1.1) translate(-50%, 150%);
+}
